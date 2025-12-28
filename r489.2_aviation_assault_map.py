@@ -1,6 +1,7 @@
 
 #矩陣轉置90度
-def turn(list1):              #zip取出00 01矩陣各自的第一位                     #*解包成[[...],[...],...]的形式
+def turn(list1):                #zip取出00 01矩陣各自的第一位     
+                                #*解包成[[...],[...],...]的形式
     rotate=[list(row) for row in zip(*list1[::-1])]
             #放進list裡
     return rotate
