@@ -3,7 +3,7 @@
 def turn(list1):                #zip取出00 01矩陣各自的第一位     
                                 #*解包成[[...],[...],...]的形式
     rotate=[list(row) for row in zip(*list1[::-1])]
-            #放進list裡
+            #放進list
     return rotate
 
 
@@ -44,3 +44,4 @@ if __name__ == "__main__":
         a-=1
 
     print(f"{max(anser)}%")
+    
